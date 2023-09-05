@@ -26,5 +26,6 @@ def redirect_to_project(request):
 urlpatterns = [
     path("", redirect_to_project, name="home"),
     path("projects/", include("projects.urls")),
+    path("accounts/", include("accounts.urls")),
     path("admin/", admin.site.urls),
 ]
